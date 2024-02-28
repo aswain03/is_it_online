@@ -12,7 +12,7 @@ def read_args():
         nargs="+",
         type=str,
         default=[],
-        help="Enter one or more URLs to check",
+        help="Enter one or more URLs to check.",
     )
     parser.add_argument(
         "-f",
@@ -20,13 +20,13 @@ def read_args():
         metavar="FILE",
         type=str,
         default="",
-        help="Read URLs from a file (one URL per line)",
+        help="Read URLs from a file (one URL per line).",
     )
     parser.add_argument(
         "-a",
         "--asynchronous",
         action="store_true",
-        help="Use asynchronous requests to check URLs",
+        help="Use asynchronous requests to check URLs.",
     )
 
     return parser.parse_args()
